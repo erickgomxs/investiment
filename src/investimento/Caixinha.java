@@ -16,14 +16,16 @@ public abstract class Caixinha {
 
 
     //Metodos
-    public void guardar(double valor){
-        this.saldoAtual = valor + saldoAtual;
-        System.out.println("Seu saldo atual: ", saldoAtual);
+    public void guardar(int valor){
+    	this.saldoAtual = saldoAtual + valor;
+    	System.out.printf("\nValor guardado com sucesso!");
+        System.out.printf("\nSeu saldo atual: " + saldoAtual);
     }
 
-    public void resgatar(double valor){
-        this.saldoAtual = valor - saldoAtual;
-        System.out.println("Seu saldo atual: ", saldoAtual);
+    public void resgatar(int valor){
+        this.saldoAtual = saldoAtual - valor;
+        System.out.printf("\nValor resgatado com sucesso!");
+        System.out.printf("\nSeu saldo atual: " + saldoAtual);
     }
 }
 
